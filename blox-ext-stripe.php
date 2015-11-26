@@ -78,7 +78,7 @@ class Blox_Ext_Stripe_Button {
 		$amount = $_POST['amount'];
 		$description = $_POST['description'];
 
-		$test_secret_key = get_post_meta( $block_id, '_block_stripe_test_secret_key', true );
+		$test_secret_key = get_post_meta( $block_id, '_block_stripe_live_secret_key', true );
 
 		$charge_args = array(
 			'headers' => array(
